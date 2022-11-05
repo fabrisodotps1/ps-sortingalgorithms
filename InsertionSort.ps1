@@ -49,15 +49,15 @@ function New-InsertionSort {
 
     for ($i = $Start; $i -le $End; $i++) {
         $j = $i
-		$x = $ToSort[$i]
+        $x = $ToSort[$i]
 
         while ($j -gt $start -and $x -lt $ToSort[$j - 1]) {
             $ToSortNew = $j - 1
             $ToSort[$j] = $ToSort[$ToSortNew];
             $j = $j - 1
         }
-				
-		$ToSort[$j] = $x;
+            
+        $ToSort[$j] = $x;
     }
     return $ToSort
 }
