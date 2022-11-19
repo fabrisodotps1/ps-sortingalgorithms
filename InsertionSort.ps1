@@ -47,6 +47,10 @@ function New-InsertionSort {
         [int]$End
     )
 
+    if ($Start -gt $End) { throw "Start must be less than End" }
+    if ($Start -lt 0) { throw "Start must be greater than 0" }
+    if ($End -gt ($ToSort.Length - 1)) { throw "End must be less than the length of the array" }
+
     for ($i = $Start; $i -le $End; $i++) {
         $j = $i
         $x = $ToSort[$i]
