@@ -1,6 +1,6 @@
 {
   "name": "PowerShell Dev Container",
-  "dockerFile": "Dockerfile",
+  "dockerFile": "dockerfile",
   "extensions": ["ms-vscode.powershell"],
   "settings": {
     "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
