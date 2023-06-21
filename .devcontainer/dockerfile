@@ -1,0 +1,10 @@
+# Use the official PowerShell image from Docker Hub
+FROM mcr.microsoft.com/powershell:lts
+
+# Set the default working directory
+WORKDIR /workspace
+
+# Install any additional tools or dependencies here, if needed
+
+# Start PowerShell in interactive mode by default
+CMD [ "pwsh", "-NoLogo" ]
